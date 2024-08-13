@@ -1,0 +1,63 @@
+body {
+  font-family: 'Sugo Pro Display', sans-serif;
+  font-size:20px;
+  color: #001447;
+  position:relative;
+}
+
+.dropdown-item {
+  font-size:18px;
+  }
+
+
+.table thead {
+  font-size:22px;
+}
+
+.table tbody {
+  font-size:16px;
+}
+
+.table span {
+  font-size: 14.5px;
+}
+
+.table {
+  width:80%;
+}
+  
+/* not active */
+.nav-pills .nav-item .nav-link:not(.active) {
+  background: rgb(149, 189, 221);
+}
+
+.nav-pills .nav-item .nav-link {
+  background: linear-gradient(#ff3131, #ff914d, rgba(255, 145, 77, 0.5));
+  color: white;
+}
+
+.text {
+  display:none;
+}
+
+@media screen and (max-width:700px) {
+  .nav-pills .nav-item .nav-link {width:auto; padding:10px 10px 10
+    px 20px};
+
+    .table {
+      width:100%;
+    }
+
+    #desc {
+      width:100px;
+    }
+}
+
+@media screen and (min-width:500px) {
+  .background {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern.png');
+  }
+  .text {
+    display:inline;
+  }
+}

@@ -1,0 +1,14 @@
+body {
+  font-family: 'Sugo Pro Display', sans-serif;
+  font-size:20px;
+}
+
+.jumbotron {
+  padding:30px;
+  padding-left:10px;
+}
+
+.dropdown-item {
+  font-size:18px;
+  }
+  

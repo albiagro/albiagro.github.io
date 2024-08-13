@@ -1,0 +1,26 @@
+body {
+  font-family: 'Sugo Pro Display', sans-serif;
+  font-size:20px;
+  color: #001447;
+}
+
+.btn {
+  background: linear-gradient(#ff3131, #ff914d);
+  font-size: 18px;
+}
+
+.dropdown-item {
+  font-size:18px;
+}
+
+.background {
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern-mobile.png');
+  height:100vh;
+}
+
+@media screen and (min-width:500px) {
+  .background {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern.png');
+    height:100vh;
+  }
+}

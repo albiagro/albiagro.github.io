@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sugo Pro Display', sans-serif;
+}
+
+body {
+  font-family: 'Sugo Pro Display', sans-serif;
+  font-size:20px;
+}
+
+.dropdown-item {
+  font-size:18px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    color:  #001447;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius:5px;
+    background-color:#f0e8e800;
+    opacity:1;
+    padding-bottom:10%;
+}
+
+.review {
+    font-size:15px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.readmore {
+    color: white;
+}
+
+.description {
+    text-align: center;
+    width: 43%;
+}
+
+.reviewSection {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.reviewItem {
+    width: 350px;
+    height: 450px;
+    padding: 10px;
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    color:#001447;
+    background-color:#ffffff;
+    border: 1px solid rgba(255, 145, 77, 0.8);
+    transition: 1s;
+}
+
+.review_title {
+    font-size: 28px;
+}
+
+.reviewItemClicked {
+    width: 400px;
+    height: 630px;
+    padding: 10px;
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    color:#001447;
+    background-color:#ffffff;
+    border: 1px solid rgba(255, 145, 77, 0.8);
+    transition: 1s;
+}
+
+#more {display: none;
+font-size: 20px;}
+
+#dots {
+    font-size:18px;
+}
+
+.btn {
+    background: linear-gradient(#ff3131, #ff914d);
+    font-size: 16px;
+  }
+
+.top {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top ul {
+    display: flex;
+    list-style: none;
+}
+
+.top ul li {
+    padding-left: 4px;
+}
+
+article p {
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+.background {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern-mobile.png');
+  }
+  
+  @media screen and (min-width:500px) {
+    .background {
+      background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern.png');
+    }
+  }
+
+@media screen and (max-width:700px) {
+    .container {
+        height: auto;
+    }
+
+    .description {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .reviewSection {
+        padding: 0;
+    }
+
+    .reviewItem {
+        width: 100%;
+    }
+
+    .top {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
