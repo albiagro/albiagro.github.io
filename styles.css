@@ -18,9 +18,30 @@ body {
   height:100vh;
 }
 
+#me {
+  border-radius:130px;
+  border-style: solid;
+  border-color:#001447;
+  margin-right:5%;
+  width:130px;
+  height:130px;
+  margin-left:1%;
+  display:inline-block;
+}
+
 @media screen and (min-width:500px) {
   .background {
     background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern.png');
     height:100vh;
+  }
+
+  #me {
+    border-radius:250px;
+    border-style:solid;
+    border-color:#001447;
+    width:250px;
+    height:250px;
+    margin-left:10%;
+    margin-top:3%;
   }
 }

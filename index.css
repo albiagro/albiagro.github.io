@@ -1,0 +1,134 @@
+h1 {
+  display: inline-block;
+  font-size: 80pt;
+  color: transparent;
+}
+h1 span {
+  display: block;
+  position: relative;
+  -webkit-animation: 1.5s showHide ease-out;
+          animation: 1.5s showHide ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+h1 span:last-child {
+  left: 120px;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+h1 span:last-child:before {
+  background: linear-gradient(#ff3131, #ff914d);
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+h1 span:before {
+  content: "";
+  background: #5fbff9;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  -webkit-animation: 1.5s inOutSwipe ease-out;
+          animation: 1.5s inOutSwipe ease-out;
+}
+
+h3 {
+  display: inline-block;
+  font-size: 80pt;
+  color: transparent;
+  margin-left: 30%;
+}
+h3 span {
+  display: block;
+  position: relative;
+  -webkit-animation: 1.5s showHide ease-out;
+          animation: 1.5s showHide ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+h3 span:last-child {
+  left: 120px;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+h3 span:last-child:before {
+  background: linear-gradient(#ff3131, #ff914d);
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+h3 span:first-child {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+h3 span:first-child:before {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+h3 span:before {
+  content: "";
+  background: #5fbff9;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  -webkit-animation: 1.5s inOutSwipe ease-out;
+          animation: 1.5s inOutSwipe ease-out;
+}
+
+@-webkit-keyframes inOutSwipe {
+  0%, 100% {
+    transform: scaleX(0);
+  }
+  40%, 50% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes inOutSwipe {
+  0%, 100% {
+    transform: scaleX(0);
+  }
+  40%, 50% {
+    transform: scaleX(1);
+  }
+}
+@-webkit-keyframes showHide {
+  0%, 40% {
+    color: transparent;
+  }
+  50%, 100% {
+    color: #444;
+  }
+}
+@keyframes showHide {
+  0%, 40% {
+    color: transparent;
+  }
+  50%, 100% {
+    color: #444;
+  }
+}
+#reset {
+  position: absolute;
+  bottom: 20px;
+  text-transform: uppercase;
+  color: #555;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  h1, h3 {
+    font-size: 55px;
+    margin-left: 0;
+  }
+  h3 {
+    margin-left: 5%;
+    margin-top: 10%;
+  }
+}/*# sourceMappingURL=index.css.map */
