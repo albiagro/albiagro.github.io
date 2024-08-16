@@ -74,4 +74,3 @@ function success() {
            document.getElementById('button').disabled = false;
        }
    }
-   
