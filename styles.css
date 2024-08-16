@@ -18,17 +18,20 @@ body {
   height:100vh;
 }
 
+@keyframes smooth-appear {
+  to{
+    bottom: 20px;
+    opacity:1;
+  }
+}
 .card {
-  animation: animation 2s;
-  }
-
-@keyframes animation {
-  from {
-    bottom: -60px
-  }
-  to {
-    bottom: 20px)
-  }
+  position: fixed;
+  bottom: -100%;
+  opacity:0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  animation: smooth-appear 1s ease forwards;
 }
 
 @media screen and (min-width:500px) {
