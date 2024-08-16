@@ -20,7 +20,7 @@ body {
 
 @keyframes smooth-appear {
   to{
-    bottom: 20px;
+    bottom: 0;
     opacity:1;
   }
 }
