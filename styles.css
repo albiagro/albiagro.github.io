@@ -18,6 +18,18 @@ body {
   height:100vh;
 }
 
+.card {
+  animation: animation 2s;
+  }
+
+@keyframes animation {
+  from {
+    bottom: -60px
+  }
+  to {
+    bottom: 20px)
+  }
+}
 
 @media screen and (min-width:500px) {
   .background {
