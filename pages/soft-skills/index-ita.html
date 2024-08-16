@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Alberto Agrò</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="../../../img/favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="../../../css/mdb.min.css" />
+    <!-- My CSS -->
+    <link href='styles.css' rel='stylesheet'/>
+    <link href="https://fonts.cdnfonts.com/css/sugo-pro-classic" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Flex o responsive in base alle dimensioni dello schermo -->
+    <script> 
+      $(document).ready(function(){
+        if (window.screen.availWidth > 600) { 
+          $("#FlexOrResponsive").toggleClass("d-flex justify-content-center");
+          $("#FlexOrResponsive2").toggleClass("d-flex justify-content-center");
+          $("#FlexOrResponsive3").toggleClass("d-flex justify-content-center");
+          $("#FlexOrResponsive4").toggleClass("d-flex justify-content-center");
+          $("#FlexOrResponsive5").toggleClass("d-flex justify-content-center");
+        } else {
+          $("#FlexOrResponsive").removeClass("d-flex justify-content-center");
+          $("#FlexOrResponsive2").removeClass("d-flex justify-content-center");
+          $("#FlexOrResponsive3").removeClass("d-flex justify-content-center");
+          $("#FlexOrResponsive4").removeClass("d-flex justify-content-center");
+          $("#FlexOrResponsive5").removeClass("d-flex justify-content-center");
+        }
+      });
+      </script>
+  </head>
+  <body>
+    <!-- Start your project here-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary" style="background: linear-gradient(#ff3131, #ff914d);">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <a class="navbar-brand me-2" href="../../index-ita.html">
+          <img
+            src="../../../img/alberto.png"
+            height="150"
+            alt="My logo"
+            loading="lazy"
+            style="margin-top: -1px;"
+          />
+        </a>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+          <!-- Left links -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            
+            <!-- Navbar dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                data-mdb-dropdown-init
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                aria-expanded="false"
+              >
+                Carriera
+              </a>
+              <!-- Dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="../my-career/work-experience-education/index-ita.html">Formazione ed esperienza lavorativa</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../my-career/my-portfolio/index-ita.html">Il mio portfolio</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                data-mdb-dropdown-init
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                aria-expanded="false"
+              >
+              Hard skills
+              </a>
+              <!-- Dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="../hard-skills/digital-skills/index-ita.html">Skill digitali</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../hard-skills/language-skills/index-ita.html">Skill linguistiche</a>
+                </li>               
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../soft-skills/index-ita.html">Soft skills</a>           
+            </li> 
+            <li class="nav-item dropdown">
+              <a
+                data-mdb-dropdown-init
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                aria-expanded="false"
+              >
+              Su di me
+              </a>
+              <!-- Dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">              
+                <li>
+                  <a class="dropdown-item" href="../about-me/bournemouth/index-ita.html">La mia esperienza in UK</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../about-me/reviews/index-ita.html">Dicono su di me</a>
+                </li>  
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contacts/index-ita.html">Contattami</a>           
+            </li>           
+              
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+  
+    <section>
+
+      <div class="background">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+
+
+          <!-- Toggle button -->
+          <button
+            data-mdb-collapse-init
+            class="navbar-toggler"
+            type="button"
+            data-mdb-target="#navbarRightAlignExample"
+            aria-controls="navbarRightAlignExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="../../..">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a style="color:black">Soft skills</a>
+            </li>
+          </ol>
+        
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                data-mdb-dropdown-init
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                aria-expanded="false"
+              >
+                <i class="flag-italy flag m-0"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="flag-italy flag"></i>Italiano
+                    <i class="fa fa-check text-success ms-2"></i
+                  ></a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="../soft-skills/index.html"><i class="flag-united-kingdom flag"></i>English</a>
+                </li>                
+              </ul>
+            </li>
+          </ul>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+
+      <!-- Tabs navs -->
+<ul class="nav nav-pills mb-3" id="ex-with-icons" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a data-mdb-pill-init class="nav-link active" id="ex-with-icons-tab-1" href="#ex-with-icons-tabs-1" role="tab"
+    aria-controls="ex-with-icons-tabs-1" aria-selected="true"><i class="far fa-comment fa-fw me-2"></i><div class="text">Communication</div></a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a data-mdb-pill-init class="nav-link" id="ex-with-icons-tab-2" href="#ex-with-icons-tabs-2" role="tab"
+      aria-controls="ex-with-icons-tabs-2" aria-selected="false"><i class="fas fa-people-carry-box fa-fw me-2"></i><div class="text">Leadership</div></a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a data-mdb-pill-init class="nav-link" id="ex-with-icons-tab-3" href="#ex-with-icons-tabs-3" role="tab"
+      aria-controls="ex-with-icons-tabs-3" aria-selected="false"><i class="fas fa-users fa-fw me-2"></i><div class="text">Teamwork</div></a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a data-mdb-pill-init class="nav-link" id="ex-with-icons-tab-3" href="#ex-with-icons-tabs-4" role="tab"
+      aria-controls="ex-with-icons-tabs-3" aria-selected="false"><i class="fas fa-cogs fa-fw me-2"></i><div class="text">Problem-Solving</div></a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a data-mdb-pill-init class="nav-link" id="ex-with-icons-tab-3" href="#ex-with-icons-tabs-5" role="tab"
+      aria-controls="ex-with-icons-tabs-3" aria-selected="false"><i class="far fa-clock fa-fw me-2"></i><div class="text">Time Management</div></a>
+  </li>
+</ul>
+<!-- Tabs navs -->
+
+<!-- Tabs content -->
+<div class="tab-content" id="ex-with-icons-content">
+  <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel" aria-labelledby="ex-with-icons-tab-1">
+    <div class="table-responsive"> 
+      <div id="FlexOrResponsive">        
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <section id="example-1">
+            <td colspan="6">Communication Skills</td>
+          </section>
+          </tr>
+          <tr>
+            <th scope="col" style="width:10%">Skill</th>
+            <th scope="col" style="width:20%">Where it was achieved</th>
+            <th scope="col" style="width:30%">Level (1-10)</th>
+            <th scope="col">Description</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Public speaking</th>
+            <td>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span>
+              <span class="badge badge-warning rounded-pill d-inline">Kings School (UK)</span>              
+            </td>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">8</div>
+            </div></td>
+            <td colspan="3">I achieved my public speaking skills mostly during my business trips at customers' site where I took courses and explained topics to different people.</td>
+          </tr>
+          <tr>
+            <th scope="row">Negotiation</th>
+            <td>
+              <span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span>
+            </td>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="10">7</div>
+            </div></td>
+            <td colspan="3">Good negotiation skills with customers, who I needed to convince while sharing my ideas to solve issues or customers' need, or with coworkers, 
+              negotiating on how to move forward on projects. </td>
+          </tr>
+          <tr>
+            <th scope="row">Conflict resolution</th>
+            <td><span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span></td>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="10">7</div>
+            </div></td>
+            <td colspan="3">During my past jobs I had to solve controversial situations, knowing when to fight for the cause while when to accept the other part's point of view.</td>
+          </tr>
+          <tr>
+            <th scope="row">Confidence</th>
+            <td><span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span>
+              <span class="badge badge-warning rounded-pill d-inline">Kings School (UK)</span></td>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">8</div>
+            </div></td>
+            <td colspan="3">High confidence achieved during all my past experiences, especially after the direct contact with customers' due to business trips.</td>
+          </tr>
+          <tr>
+            <th scope="row">Empathetic listening</th>
+            <td><span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span></td>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="10">8</div>
+            </div></td>
+            <td colspan="3">From the beginning I was able to listen and understand customers, trying to solve their need at my best, as that is the most satisfying reward.</td>
+          </tr>       
+        </tbody>
+      </table>
+      </div>
+      </div>
+  </div>
+  <div class="tab-pane fade" id="ex-with-icons-tabs-2" role="tabpanel" aria-labelledby="ex-with-icons-tab-2">
+    <div class="table-responsive"> 
+      <div id="FlexOrResponsive2">        
+      <table class="table table-striped" style="width: 80%">
+        <thead>
+          <tr>
+            <section id="example-2">
+            <td colspan="6">Leadership Skills</td>
+          </section>
+          </tr>
+          <tr>
+            <th scope="col" style="width:20%">Skill</th>
+            <th scope="col" style="width:20%">Where it was achieved</th>
+            <th scope="col" style="width:20%">Level (1-10)</th>
+            <th scope="col">Description</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Decision-making</th>
+            <td><span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span></td>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">8</div>
+            </div></td>
+            <td colspan="3">Fair decision-making skills obtained at all the previous jobs in order to know how to move forward with a colleague or customers.</td>
+          </tr>
+          <tr>
+            <th scope="row">Adaptability</th>
+            <td><span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-warning rounded-pill d-inline">Kings School (UK)</span>  
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span></td> 
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="10">9</div>
+            </div></td>
+            <td colspan="3">Excellent adaptability skills due to all my previous experiences, most especially in the UK as I had to adapt to different culture and lifestyle, but also at Tesisquare and Lantek due to irregular shifts, availability, business trips...</td>
+          </tr>
+          <tr>
+            <th scope="row">Team-building</th>
+            <td><span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span></td>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="10">9</div>
+            </div></td>
+            <td colspan="3">What I did is to establish special relationships with all the colleagues I worked with. Team-building is crucial to me!</td>
+          </tr>
+          <tr>
+            <th scope="row">Reliability</th>
+            <td><span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span></td>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">9</div>
+            </div></td>
+            <td colspan="3">My goal is always to accomplish my tasks with high quality and respecting the deadlines, especially if they are internal projects.</td>
+          </tr>      
+        </tbody>
+      </table>
+      </div>
+      </div>
+  </div>
+  <div class="tab-pane fade" id="ex-with-icons-tabs-3" role="tabpanel" aria-labelledby="ex-with-icons-tab-3">
+    <div class="table-responsive"> 
+      <div id="FlexOrResponsive3">        
+      <table class="table table-striped" style="width: 80%">
+        <thead>
+          <tr>
+            <section id="example-3">
+            <td colspan="6">Teamwork Skills</td>
+          </section>
+          </tr>
+          <tr>
+            <th scope="col" style="width:20%">Skill</th>
+            <th scope="col" style="width:20%">Where it was achieved</th>
+            <th scope="col" style="width:20%">Level (1-10)</th>
+            <th scope="col">Description</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Empathetic listening</th>
+            <td><span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span></td>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">8</div>
+            </div></td>
+            <td colspan="3">Empathetic listening is crucial to build strong relationships and I always can listen to others' need.</td>
+          </tr>
+          <tr>
+            <th scope="row">Conflict resolution</th>
+            <td><span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span></td>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="10">7</div>
+            </div></td>
+            <td colspan="3">Fair conflict resolution skills which I always handled at my best.</td>
+          </tr>
+          <tr>
+            <th scope="row">Rapport-building</th>
+            <td><span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span>
+              <span class="badge badge-warning rounded-pill d-inline">Kings School (UK)</span></td>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="10">8</div>
+            </div></td>
+            <td colspan="3">I worked with a lot of people with different mindset, age and lifestyle, but I always had a strong rapport, mostly it was more similar to friendship.</td>
+          </tr>
+          <tr>
+            <th scope="row">Respectfulness</th>
+            <td><span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span>
+              <span class="badge badge-warning rounded-pill d-inline">Kings School (UK)</span></td>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">8</div>
+            </div></td>
+            <td colspan="3">Who knows me knows also the respect is one of my primary values, inside and outside the Company.</td>
+          </tr>   
+        </tbody>
+      </table>
+      </div>
+      </div>
+  </div>
+  <div class="tab-pane fade" id="ex-with-icons-tabs-4" role="tabpanel" aria-labelledby="ex-with-icons-tab-4">
+    <div class="table-responsive"> 
+      <div id="FlexOrResponsive4">        
+      <table class="table table-striped" style="width: 80%">
+        <thead>
+          <tr>
+            <section id="example-4">
+            <td colspan="6">Problem-Solving Skills</td>
+          </section>
+          </tr>
+          <tr>
+            <th scope="col" style="width:20%">Skill</th>
+            <th scope="col" style="width:20%">Where it was achieved</th>
+            <th scope="col" style="width:20%">Level (1-10)</th>
+            <th scope="col">Description</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Analysis</th>
+            <td><span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">8</div>
+            </div></td>
+            <td colspan="3">I love to make accurate analysis.</td>
+          </tr>
+          <tr>
+            <th scope="row">Decision-making</th>
+            <td><span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="10">8</div>
+            </div></td>
+            <td colspan="3">I always worked with customers' issues and I have developed the knowing of how to move forward to handle one issue (technical or not).</td>
+          </tr>
+          <tr>
+            <th scope="row">Communication</th>
+            <td><span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span></td>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="10">8</div>
+            </div></td>
+            <td colspan="3">Great skills to communicate the result of my analysis to colleagues or customers.</td>
+          </tr>
+          <tr>
+            <th scope="row">Creative and critical thinking</th>
+            <td><span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">9</div>
+            </div></td>
+            <td colspan="3">I can be very critical to my own works in order to always find new optimizations.</td>
+          </tr>
+          <tr>
+            <th scope="row">Innovation and research</th>
+            <td><span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">9</div>
+            </div></td>
+            <td colspan="3">I love to google and learn more in order to improve myself. Knowing what to search is crucial to me.</td>
+          </tr>      
+        </tbody>
+      </table>
+      </div>
+      </div>
+  </div>
+  <div class="tab-pane fade" id="ex-with-icons-tabs-5" role="tabpanel" aria-labelledby="ex-with-icons-tab-5">
+    <div class="table-responsive"> 
+      <div id="FlexOrResponsive5">        
+      <table class="table table-striped" style="width: 80%">
+        <thead>
+          <tr>
+            <section id="example-5">
+            <td colspan="6">Time Management Skills</td>
+          </section>
+          </tr>
+          <tr>
+            <th scope="col" style="width:20%">Skill</th>
+            <th scope="col" style="width:20%">Where it was achieved</th>
+            <th scope="col" style="width:20%">Level (1-10)</th>
+            <th scope="col">Description</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Prioritization</th>
+            <td><span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">8</div>
+            </div></td>
+            <td colspan="3">I developed strong skills of prioritization mostly during customers support, where you are required to know which issue to prioritize.</td>
+          </tr>
+          <tr>
+            <th scope="row">Detail-oriented</th>
+            <td><span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="10">9</div>
+            </div></td>
+            <td colspan="3">I'm always detail-oriented in everything I do, as I love being rewarded for that.</td>
+          </tr>
+          <tr>
+            <th scope="row">Diligent</th>
+            <td><span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="10">9</div>
+            </div></td>
+            <td colspan="3">Diligence is what represent me in addition to ambition and motivation.</td>
+          </tr>
+          <tr>
+            <th scope="row">Ambitious</th>
+            <td><span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">9</div>
+            </div></td>
+            <td colspan="3">I am very ambitious as I want to learn more everyday in order to improve myself and my role. I'm a very active person, I cannot accept repetitive tasks, I want to move forward in what I do.</td>
+          </tr>
+          <tr>
+            <th scope="row">Motivated</th>
+            <td><span class="badge badge-primary rounded-pill d-inline">Tesisquare</span>
+              <span class="badge badge-success rounded-pill d-inline">Lantek</span>
+            <td><div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">8</div>
+            </div></td>
+            <td colspan="3">I'm really motivated in everything I do, even if sometimes I need to have some feedback in order to keep my enthusiasm. I don't like to work without feedbacks, I need to know when I am doing well and when I am not.</td>
+          </tr>      
+        </tbody>
+      </table>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Tabs content -->     
+</div>
+
+      <!-- Footer -->
+      <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with me on social networks:</span>
+          </div>
+          <!-- Left -->
+      
+          <!-- Right -->
+          <div>
+            <a href="https://www.instagram.com/albiagro/" target="_blank" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/alberto-agrò-0a425912a" target="_blank" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/albiagro" target="_blank" class="me-4 text-reset">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+      
+      </footer>
+<!-- Footer -->
+    </section>
+    
+    
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="../../../js/mdb.umd.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="../../../js/myscript.js"></script>
+  </body>
+</html>
