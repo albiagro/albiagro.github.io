@@ -30,6 +30,10 @@ body {
   animation: smooth-appear 1s ease forwards;
 }
 
+.card2 {
+  animation-delay: 2s;
+  }
+
 @media screen and (min-width:500px) {
   .background {
     background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern.png');
