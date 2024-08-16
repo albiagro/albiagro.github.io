@@ -124,11 +124,12 @@ h3 span:before {
 
 @media screen and (max-width: 500px) {
   h1, h3 {
-    font-size: 55px;
+    font-size: 50px;
     margin-left: 0;
   }
   h3 {
-    margin-left: 5%;
+    left: 50%;
+    right: 50%;
     margin-top: 10%;
   }
 }/*# sourceMappingURL=index.css.map */
