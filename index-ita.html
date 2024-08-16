@@ -180,12 +180,48 @@
       </nav>
 
       <div class="background">
-
-        <img id="me" src="/img/alberto-foto.jpg" alt="Avatar">
-        
-        <h1 id="animate"><span>Hello</span> <span>World!</span></h1><br>
-        <h3 id="animate"><span>Benvenuti</span> <span>Sul mio sito web!</span></h1>
-    </div>
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="/img/alberto-foto.jpg"
+                alt="Trendy Pants and Shoes"
+                class="img-fluid rounded-start"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h1 class="card-title">Hello World! Benvenuti sul mio sito web!</h1>
+                <p class="card-text">
+                  Sono Alberto Agrò, sviluppatore software con una grande passione per quello che faccio. Amo imparare cose nuove, mettermi alla prova e arricchire le mie competenze tecniche e personali.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Ultimo aggiornamento <small class="text-muted" id="datetime"></small></small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h1 class="card-title">Iniziamo il tour?</h1>
+                <p class="card-text">
+                  Sei pronto? Iniziamo a scoprire la mia esperienza!
+                </p>
+                <div class="span"><a href="/pages/my-career/work-experience-education/index.html"><button type="button" class="btn btn-primary" data-mdb-ripple-init>Inizia il tour</button></a></div>
+                <br>
+                <p class="card-text">
+                  <small class="text-muted">Ultimo aggiornamento <small class="text-muted" id="datetime2"></small></small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+         </div>
 
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-body-tertiary text-muted">
@@ -222,5 +258,14 @@
     <script type="text/javascript" src="js/mdb.umd.min.js"></script>
     <!-- Custom scripts -->
     <script src="js/myjscript.js"></script>
+    <script>
+      // Get current date and time
+      var now = new Date();
+      var datetime = now.toLocaleString();
+    
+      // Insert date and time into HTML
+      document.getElementById("datetime").innerHTML = datetime;
+      document.getElementById("datetime2").innerHTML = datetime;
+    </script>
   </body>
 </html>
