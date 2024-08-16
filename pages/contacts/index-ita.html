@@ -185,88 +185,87 @@
       </nav>
 
       <div class="container">
-      <form id="ContactMeForm">
-        <!-- 2 column grid layout with text inputs for the first and last names -->
-        <div class="row mb-4">
-          <div class="col">
-            <div data-mdb-input-init class="form-outline">
-              <input type="text" name="from_name" id="from_name" class="form-control" onkeyup="success()"/>
-              <label class="form-label" for="from_name">First name *</label>
+        <form id="ContactMeForm">
+          <!-- Griglia a 2 colonne con campi di testo per il nome e il cognome -->
+          <div class="row mb-4">
+            <div class="col">
+              <div data-mdb-input-init class="form-outline">
+                <input type="text" name="from_name" id="from_name" class="form-control" onkeyup="success()"/>
+                <label class="form-label" for="from_name">Nome *</label>
+              </div>
+            </div>
+            <div class="col">
+              <div data-mdb-input-init class="form-outline">
+                <input type="text" name="from_lastname" id="from_lastname" class="form-control" onkeyup="success()"/>
+                <label class="form-label" for="from_lastname">Cognome *</label>
+              </div>
             </div>
           </div>
-          <div class="col">
-            <div data-mdb-input-init class="form-outline">
-              <input type="text" name="from_lastname" id="from_lastname" class="form-control" onkeyup="success()"/>
-              <label class="form-label" for="from_lastname">Last name *</label>
+        
+          <!-- Campo di testo -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <input type="text" name="company_name" id="company_name" class="form-control" />
+            <label class="form-label" for="company_name">Nome dell'azienda (facoltativo)</label>
+          </div>
+        
+          <!-- Campo di testo -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <input type="text" name="address" id="address" class="form-control" />
+            <label class="form-label" for="address">Indirizzo (facoltativo)</label>
+          </div>
+        
+          <!-- Campo email -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <input type="email" name="email" id="email" class="form-control" onkeyup="success()"/>
+            <label class="form-label" for="email">Email *</label>
+          </div>
+        
+          <!-- Campo numerico -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <input type="number" name="phone" id="phone" class="form-control" />
+            <label class="form-label" for="phone">Telefono (facoltativo)</label>
+          </div>
+        
+          <!-- Campo messaggio -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <textarea class="form-control" name="message" id="message" rows="4" onkeyup="success()"></textarea>
+            <label class="form-label" for="message">Il tuo messaggio...</label>
+          </div>
+        
+          <!-- Pulsante di invio -->
+          <input type="submit" id="button" class="btn btn-primary" data-mdb-ripple-init value="Invia email" disabled> 
+        </form>
+      </div>
+      </div>
+      
+      
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+          <!-- Sezione: Social media -->
+          <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Sinistra -->
+            <div class="me-5 d-none d-lg-block">
+              <span>Resta connesso con me sui social network:</span>
             </div>
-          </div>
-        </div>
+            <!-- Sinistra -->
+        
+            <!-- Destra -->
+            <div>
+              <a href="https://www.instagram.com/albiagro/" target="_blank" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/alberto-agrò-0a425912a" target="_blank" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/albiagro" target="_blank" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <!-- Destra -->
+          </section>
+          <!-- Sezione: Social media -->
       
-        <!-- Text input -->
-        <div data-mdb-input-init class="form-outline mb-4">
-          <input type="text" name="company_name" id="company_name" class="form-control" />
-          <label class="form-label" for="company_name">Company name (optional)</label>
-        </div>
-      
-        <!-- Text input -->
-        <div data-mdb-input-init class="form-outline mb-4">
-          <input type="text" name="address" id="address" class="form-control" />
-          <label class="form-label" for="address">Address (optional)</label>
-        </div>
-      
-        <!-- Email input -->
-        <div data-mdb-input-init class="form-outline mb-4">
-          <input type="email" name="email" id="email" class="form-control" onkeyup="success()"/>
-          <label class="form-label" for="email">Email *</label>
-        </div>
-      
-        <!-- Number input -->
-        <div data-mdb-input-init class="form-outline mb-4">
-          <input type="number" name="phone" id="phone" class="form-control" />
-          <label class="form-label" for="phone">Phone (optional)</label>
-        </div>
-      
-        <!-- Message input -->
-        <div data-mdb-input-init class="form-outline mb-4">
-          <textarea class="form-control" name="message" id="message" rows="4" onkeyup="success()"></textarea>
-          <label class="form-label" for="message">Your message...</label>
-        </div>
-      
-      
-        <!-- Submit button -->
-        <input type="submit" id="button" class="btn btn-primary" data-mdb-ripple-init value="Send email" disabled> 
-      </form>
-    </div>
-    </div>
-
-
-      <!-- Footer -->
-      <footer class="text-center text-lg-start bg-body-tertiary text-muted">
-        <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-          <!-- Left -->
-          <div class="me-5 d-none d-lg-block">
-            <span>Get connected with me on social networks:</span>
-          </div>
-          <!-- Left -->
-      
-          <!-- Right -->
-          <div>
-            <a href="https://www.instagram.com/albiagro/" target="_blank" class="me-4 text-reset">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/alberto-agrò-0a425912a" target="_blank" class="me-4 text-reset">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/albiagro" target="_blank" class="me-4 text-reset">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-          <!-- Right -->
-        </section>
-        <!-- Section: Social media -->
-      
-      </footer>
+        </footer>      
 <!-- Footer -->
     </section>
     
