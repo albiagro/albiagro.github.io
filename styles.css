@@ -25,10 +25,8 @@ body {
   }
 }
 .card {
-  position: fixed;
   bottom: -100%;
   opacity:0;
-  left: 50%;
   transform: translateX(-50%);
   border-radius: 10px;
   animation: smooth-appear 1s ease forwards;
