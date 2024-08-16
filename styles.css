@@ -15,7 +15,7 @@ body {
 
 .background {
   background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern-mobile.png');
-  height:100vh;
+  height:80vh;
 }
 
 #me {
@@ -27,6 +27,7 @@ body {
   height:130px;
   margin-left:1%;
   display:inline-block;
+  animation: fadeIn 3s;
 }
 
 @media screen and (min-width:500px) {
@@ -43,5 +44,11 @@ body {
     height:250px;
     margin-left:10%;
     margin-top:3%;
+    animation: fadeIn 3s;
   }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
