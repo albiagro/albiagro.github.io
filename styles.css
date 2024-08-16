@@ -30,7 +30,7 @@ body {
   animation: smooth-appear 1s ease forwards;
 }
 
-.card2 {
+#card2 {
   animation-delay: 2s;
   }
 
