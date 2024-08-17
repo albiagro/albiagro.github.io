@@ -15,12 +15,11 @@ body {
 
 .background {
   background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern-mobile.png');
-  height:100vh;
 }
 
 @keyframes smooth-appear {
   to{
-    bottom: 0;
+    bottom:0;
     opacity:1;
   }
 }
@@ -37,7 +36,7 @@ body {
 @media screen and (min-width:500px) {
   .background {
     background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern.png');
-    height:100vh;
+    height: 70vh;
   }
 
   .card {
