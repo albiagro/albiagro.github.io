@@ -15,7 +15,7 @@ body {
 
 .background {
   background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern-mobile.png');
-  height:110vh;
+  height:130vh;
 }
 
 @keyframes smooth-appear {
