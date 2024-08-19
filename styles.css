@@ -1,11 +1,16 @@
+
 body {
-  font-family: 'Sugo Pro Display', sans-serif;
+  font-family: var(--SugoFont);
   font-size:20px;
-  color: #001447;
+  color: var(--Blue);
+}
+
+#header {
+  background: var(--OrangeGradient);
 }
 
 .btn {
-  background: linear-gradient(#ff3131, #ff914d);
+  background: var(--OrangeGradient);
   font-size: 18px;
 }
 
@@ -14,7 +19,7 @@ body {
 }
 
 .background {
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern-mobile.png');
+  background-image: var(--BackgroundMobileTransparent);
   height:130vh;
 }
 
@@ -36,7 +41,7 @@ body {
 
 @media screen and (min-width:500px) {
   .background {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern.png');
+    background-image: var(--BackgroundDesktopTransparent);
     height: 70vh;
   }
 

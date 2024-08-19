@@ -1,5 +1,5 @@
 body {
-    font-family: 'Sugo Pro Display', sans-serif;
+  font-family: var(--SugoFont);
     font-size:20px;
   }
 
@@ -13,7 +13,7 @@ body {
 }
 
 .btn {
-  background: linear-gradient(#ff3131, #ff914d);
+  background: var(--OrangeGradient);
   font-size: 16px;
 }
 
@@ -26,7 +26,7 @@ body {
   content: "";
   position: absolute;
   width: 6px;
-  background-color: #001447;
+  background-color: var(--Blue);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -47,7 +47,7 @@ body {
   width: 25px;
   height: 25px;
   right: -13px;
-  background-color: #001447;
+  background-color: var(--Blue);
   border: 5px solid #ff3131;
   top: 15px;
   border-radius: 50%;
@@ -96,7 +96,7 @@ body {
 }
 
 .background {
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern-mobile.png');
+  background-image: var(--BackgroundMobileTransparent);
 }
 
 
@@ -188,7 +188,7 @@ body {
   }
 
   .background {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern.png');
+    background-image: var(--BackgroundDesktopTransparent);
   }
   }
 

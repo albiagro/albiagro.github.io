@@ -1,7 +1,7 @@
 body {
-  font-family: 'Sugo Pro Display', sans-serif;
+  font-family: var(--SugoFont);
   font-size:20px;
-  color: #001447;
+  color: var(--Blue);
   position:relative;
 }
 
@@ -28,11 +28,11 @@ body {
   
 /* not active */
 .nav-pills .nav-item .nav-link:not(.active) {
-  background: rgb(149, 189, 221);
+  background: var(--OrangeGradientNotActive);
 }
 
 .nav-pills .nav-item .nav-link {
-  background: linear-gradient(#ff3131, #ff914d, rgba(255, 145, 77, 0.5));
+  background: var(--OrangeGradient);
   color: white;
 }
 
@@ -59,7 +59,7 @@ body {
 
 @media screen and (min-width:500px) {
   .background {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern.png');
+    background-image: var(--BackgroundDesktopTransparent);
   }
   .text {
     display:inline;

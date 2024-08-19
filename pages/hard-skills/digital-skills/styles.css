@@ -1,7 +1,7 @@
 body {
-  font-family: 'Sugo Pro Display', sans-serif;
+  font-family: var(--SugoFont);
   font-size:20px;
-  color: #001447;
+  color: var(--Blue);
 }
 
 .dropdown-item {
@@ -22,12 +22,12 @@ body {
 }
 
 .background {
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern-mobile.png');
+  background-image: var(--BackgroundMobileTransparent);
 }
 
 @media screen and (min-width:500px) {
   .background {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern.png');
+    background-image: var(--BackgroundDesktopTransparent);
   }
 
   .table{

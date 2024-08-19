@@ -1,5 +1,5 @@
 body {
-  font-family: 'Sugo Pro Display', sans-serif;
+  font-family: var(--SugoFont);
   font-size:20px;
 }
 
@@ -8,16 +8,16 @@ font-size:18px;
 }
 
 .background {
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern-mobile.png');
+  background-image: var(--BackgroundMobileTransparent);
 }
   
 .btn {
-  background: linear-gradient(#ff3131, #ff914d);
+  background: var(--OrangeGradient);
   font-size: 14px;
 }
 
 @media screen and (min-width: 600px) {
   .background {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern.png');
+    background-image: var(--BackgroundDesktopTransparent);
   }
   }

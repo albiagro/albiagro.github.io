@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Sugo Pro Display', sans-serif;
+  font-family: var(--SugoFont);
 }
 
 body {
-  font-family: 'Sugo Pro Display', sans-serif;
+  font-family: var(--SugoFont);
   font-size:20px;
 }
 
@@ -17,7 +17,7 @@ body {
 .container {
     width: 100%;
     height: 100vh;
-    color:  #001447;
+    color:  var(--Blue);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -62,9 +62,9 @@ h2 {
     margin: 1rem;
     cursor: pointer;
     border-radius: 10px;
-    color:#001447;
+    color:var(--Blue);
     background-color:#ffffff;
-    border: 1px solid rgba(255, 145, 77, 0.8);
+    border: 1px solid var(--OrangeGradient);
     transition: 1s;
 }
 
@@ -81,7 +81,7 @@ h2 {
     border-radius: 10px;
     color:#001447;
     background-color:#ffffff;
-    border: 1px solid rgba(255, 145, 77, 0.8);
+    border: 1px solid var(--OrangeGradient);
     transition: 1s;
 }
 
@@ -93,7 +93,7 @@ font-size: 20px;}
 }
 
 .btn {
-    background: linear-gradient(#ff3131, #ff914d);
+    background: var(--OrangeGradient);
     font-size: 16px;
   }
 
@@ -121,12 +121,12 @@ article p {
 }
 
 .background {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern-mobile.png');
+    background-image: var(--BackgroundMobileTransparent);
   }
   
   @media screen and (min-width:500px) {
     .background {
-      background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('../../../img/pattern.png');
+      background-image: var(--BackgroundDesktopTransparent);
     }
   }
 
