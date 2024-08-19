@@ -4,9 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Alberto Agrò</title>
+
+    <!-- OG Tags-->
+    <meta property="og:title" content="Alberto Agrò's Portfolio | Software Developer | English Lover" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://albiagro.github.io/img/AlbertoAgro.jpg" />
+    <meta property="og:url" content="https://albiagro.github.io/" />
+
+    <title>Alberto Agrò | Homepage</title>
+    <meta name="description" content="Alberto Agrò, software developer, driven by dedication and motivation, seeking challenges to grow, learn, and innovate in every project.">
+    <meta name="robots" content="index, follow">
+
     <!-- MDB icon -->
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/idea.png" type="image/x-icon" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -21,10 +31,14 @@
     <link rel="stylesheet" href="css/mdb.min.css" />
     <!-- My CSS -->
     <link rel='stylesheet' href='styles.css'/>
-    <link rel='stylesheet' href='index.css'/>
     <!-- My font -->
     <link href="https://fonts.cdnfonts.com/css/sugo-pro-classic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.umd.min.js" defer></script>
+    <!-- Custom scripts -->
+    <script src="js/myjscript.js" defer></script>
+    <script src="js/get_datetime.js" defer></script>
 
   </head>
 
@@ -185,7 +199,7 @@
             <div class="col-md-4">
               <img
                 src="/img/alberto-foto.jpg"
-                alt="Trendy Pants and Shoes"
+                alt="Alberto Foto"
                 class="img-fluid rounded-start"
               />
             </div>
@@ -253,19 +267,5 @@
 <!-- Footer -->
     
     <!-- End your project here-->
-
-    <!-- MDB -->
-    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
-    <!-- Custom scripts -->
-    <script src="js/myjscript.js"></script>
-    <script>
-      // Get current date and time
-      var now = new Date();
-      var datetime = now.toLocaleString();
-    
-      // Insert date and time into HTML
-      document.getElementById("datetime").innerHTML = datetime;
-      document.getElementById("datetime2").innerHTML = datetime;
-    </script>
   </body>
 </html>

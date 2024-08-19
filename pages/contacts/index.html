@@ -22,6 +22,13 @@
     <!-- My CSS -->
     <link href='styles.css' rel='stylesheet'/>
     <link href="https://fonts.cdnfonts.com/css/sugo-pro-classic" rel="stylesheet">
+
+    <!-- MDB -->
+    <script type="text/javascript" src="../../js/mdb.umd.min.js" defer></script>
+    <!-- Custom scripts -->
+    <script src="../../js/myjscript.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+    <script type="text/javascript" src="../../js/send_email.js" defer></script>
   </head>
   <body>
     <!-- Start your project here-->
@@ -268,44 +275,7 @@
 <!-- Footer -->
     </section>
     
-    
     <!-- End your project here-->
 
-    <!-- MDB -->
-    <script type="text/javascript" src="../../../js/mdb.umd.min.js"></script>
-    <!-- Custom scripts -->
-    <script type="text/javascript" src="../../../js/myscript.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init({
-              publicKey: "P4xYiCbvsjbS0p4Uv",
-            });
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('ContactMeForm').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // these IDs from the previous steps
-                emailjs.sendForm("service_552ms1d","template_090i7aw", this)
-                    .then(() => {
-                        console.log('SUCCESS!');
-                        alert("Email sent successfully!");
-                        document.getElementById('from_name').value = '';
-                        document.getElementById('from_lastname').value = '';
-                        document.getElementById('company_name').value = '';
-                        document.getElementById('address').value = '';
-                        document.getElementById('email').value = '';
-                        document.getElementById('phone').value = '';
-                        document.getElementById('message').value = '';
-                    }, (error) => {
-                        console.log('FAILED...', error);
-                        alert("Error while sending the email!");
-                    });
-            });
-        }
-    </script>
   </body>
 </html>

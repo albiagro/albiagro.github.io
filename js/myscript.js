@@ -45,34 +45,6 @@ function ReadMoreIT()
     }
 }
 
-const btn = document.getElementById('button');
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
-
-   btn.value = 'Sending...';
-
-   const serviceID = 'default_service';
-   const templateID = 'template_090i7aw';
-
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
-    }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
-    });
-});
-
-function success() {
-  if(document.getElementById("from_name").value==="" || document.getElementById("from_lastname").value==="" || document.getElementById("email").value==="" 
-  || document.getElementById("message").value==="") { 
-           document.getElementById('button').disabled = true; 
-       } else { 
-           document.getElementById('button').disabled = false;
-       }
-   }
 
     
