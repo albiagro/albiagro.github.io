@@ -1,0 +1,23 @@
+body {
+  font-family: var(--SugoFont);
+  font-size:20px;
+}
+
+.dropdown-item {
+font-size:18px;
+}
+
+.background {
+  background-image: var(--BackgroundMobileTransparent);
+}
+  
+.btn {
+  background: var(--OrangeGradient);
+  font-size: 14px;
+}
+
+@media screen and (min-width: 600px) {
+  .background {
+    background-image: var(--BackgroundDesktopTransparent);
+  }
+  }
